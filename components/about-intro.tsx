@@ -33,7 +33,7 @@ export function AboutIntro() {
 
         <div className="lg:col-span-9">
           <Reveal delay={80}>
-            <p className="text-balance font-serif text-2xl font-light leading-snug tracking-tight text-muted-foreground md:text-4xl md:leading-[1.2] [&_strong]:font-normal [&_strong]:text-foreground">
+            <p className="text-balance font-serif text-[1.75rem] font-light leading-[1.15] tracking-tight text-muted-foreground md:text-4xl md:leading-[1.2] [&_strong]:font-normal [&_strong]:text-foreground">
               Lee plays a key role in aligning internal teams, external vendors, and production partners to <strong>sustain creative quality and momentum</strong>, finding creative solutions and resolving roadblocks before they disrupt production. His approach combines sound judgment, clear expectations, and constructive feedback with respect for his collaborators. A senior creative leader with a career spanning <strong>AAA games and licensed franchises</strong>, including Call of Duty: Mobile, Rock Band 4, Ghost Recon, and Rainbow Six, he draws on hands-on experience across characters, props, environments, VFX, and animation to <strong>bridge artistic vision, technical execution, and production strategy</strong>.
             </p>
           </Reveal>

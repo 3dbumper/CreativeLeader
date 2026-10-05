@@ -137,7 +137,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
       <div className="mt-5 flex items-start justify-between gap-6">
         <div>
-          <h3 className="font-serif text-2xl font-light leading-tight tracking-tight text-foreground md:text-3xl">
+          <h3 className="font-serif text-[1.75rem] font-light leading-tight tracking-tight text-foreground md:text-3xl">
             {project.title}
           </h3>
           <p className="mt-2 text-sm text-muted-foreground">{project.role}</p>
@@ -164,7 +164,7 @@ export function SelectedWork() {
         as="header"
         className="mb-14 flex flex-col justify-between gap-6 border-t border-border pt-8 md:flex-row md:items-end md:pt-10"
       >
-        <h2 className="font-serif text-3xl font-light tracking-tight text-foreground md:text-4xl">
+        <h2 className="font-serif text-4xl font-light tracking-tight text-foreground md:text-4xl">
           Selected Work
         </h2>
       </Reveal>
