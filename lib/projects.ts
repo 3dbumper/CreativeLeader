@@ -121,7 +121,7 @@ export const projects: Project[] = [
         alt: 'Retro-futuristic computer avatar reading LEET haxor, from Call of Duty: Mobile',
       },
       sticker: {
-        src: '/images/cl-garand-sticker.png',
+        src: '/images/cl-garand-sticker.webp',
         alt: 'Stylized M1 Garand rifle sticker firing with its en-bloc clip ejecting, from Call of Duty: Mobile',
       },
     },
@@ -208,7 +208,7 @@ export const projects: Project[] = [
     role: 'Outsource Management & Partner Collaboration',
     meta: '',
   heroScatter: true,
-  image: '/images/production-collaboration-collage.png',
+  image: '/images/production-collaboration-collage.webp',
   imagePosition: 'object-contain [image-rendering:auto]',
   alt: 'Collage of externally-produced Call of Duty: Mobile and Volta assets — two Volta environment scenes (a beached red seaplane and a ruined carnival), a blue starry weapon skin, a wendigo emblem, a cartoon pigeon charm, and a red masked character',
     tagline: 'Managing external partners at AAA scale and quality.',
@@ -243,7 +243,7 @@ export const projects: Project[] = [
         ],
         images: [
           {
-            src: '/images/external-development-collage.png',
+            src: '/images/external-development-collage.webp',
             alt: 'Collage of externally-produced Call of Duty: Mobile and Volta assets — a snow sniper scene with a rabbit, alien and cold-weather operator turnarounds, a fiery dragon weapon, gold winged weapon concepts, a voltage-meter prop, gingerbread and skull emblems, a red mask, and a robot-lineup scene',
             caption: 'Cross-Sample of Live Ops Content',
             aspect: '2400/1080',
@@ -266,14 +266,14 @@ export const projects: Project[] = [
         aside: true,
         images: [
           {
-            src: '/images/extdev/rivas-neon-front.png',
+            src: '/images/extdev/rivas-neon-front.webp',
             alt: 'Front view of the finished Rivas neon 3D character model: an operator in glowing purple LED shades, an iridescent magenta jacket over a tactical vest, neon glow sticks and bracelets, and paint-splattered white cargo pants',
             caption: 'Rivas - Neon',
             aspect: '768/1376',
             transparent: true,
           },
           {
-  src: '/images/quality-oversight-weapon-trim.png',
+  src: '/images/quality-oversight-weapon-trim.webp',
   alt: 'Ornate black, gold, and ivory winged rifle shown in profile',
   caption: 'Legendary AK117 - Molting Mauler',
   aspect: '3273/1021',
