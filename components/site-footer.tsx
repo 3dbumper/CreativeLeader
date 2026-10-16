@@ -6,7 +6,7 @@ export function SiteFooter({ showArtwork = true }: { showArtwork?: boolean }) {
   return (
     <footer id="contact" className="border-t border-border">
       {showArtwork && (
-        <div className="relative h-[48svh] min-h-[320px] w-full overflow-hidden md:h-[60svh] [@media(min-aspect-ratio:3/2)]:h-auto! [@media(min-aspect-ratio:3/2)]:aspect-[3/1]">
+        <div className="relative h-[48svh] min-h-[320px] w-full overflow-hidden [mask-image:linear-gradient(to_bottom,black_0%,rgb(0_0_0/0.9)_50%,transparent_100%)] md:h-[60svh] [@media(min-aspect-ratio:3/2)]:h-auto! [@media(min-aspect-ratio:3/2)]:aspect-[3/1] [@media(min-aspect-ratio:3/2)]:[mask-image:linear-gradient(to_bottom,black_90%,rgb(0_0_0/0.3)_100%)]">
           {/* Portrait / tablet framing (unchanged). Hidden on wide screens. */}
           <Image
             src="/images/hero-full-hd.jpg"
@@ -25,9 +25,6 @@ export function SiteFooter({ showArtwork = true }: { showArtwork?: boolean }) {
             sizes="100vw"
             className="hidden object-cover object-[50%_50%] [@media(min-aspect-ratio:3/2)]:block"
           />
-          {/* Fade the image into the page so the contact content reads cleanly.
-              On wide screens only the very bottom ramps to background, well below the dog. */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/10 to-background [@media(min-aspect-ratio:3/2)]:bg-[linear-gradient(to_bottom,transparent_0%,transparent_90%,color-mix(in_oklch,var(--background)_70%,transparent)_100%)]" />
         </div>
       )}
 
