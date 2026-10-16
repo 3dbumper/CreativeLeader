@@ -64,7 +64,7 @@ export default async function WorkDetailPage({
   const sectionsLabel = project.sectionsLabel ?? 'Areas of Direction'
 
   return (
-    <main className="min-h-svh bg-background">
+    <main className="min-h-svh bg-distressed">
       <SiteNav />
 
       {/* Banner */}

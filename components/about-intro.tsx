@@ -5,7 +5,7 @@ export function AboutIntro() {
   return (
     <section
       id="about"
-      className="border-t border-border bg-card/40"
+      className="border-t border-border"
     >
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-24 md:py-32 lg:grid-cols-12 lg:gap-16 lg:px-10">
         <Reveal className="lg:col-span-3">
