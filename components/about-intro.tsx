@@ -24,7 +24,7 @@ export function AboutIntro() {
                   alt="Portrait of Lee Williamson"
                   fill
                   sizes="208px"
-                  className="object-cover object-[50%_40%] grayscale transition-[filter,transform] duration-700 ease-out group-hover:scale-[1.04] group-hover:grayscale-0"
+                  className="scale-110 object-cover object-[50%_21%] grayscale transition-[filter,transform] duration-700 ease-out group-hover:scale-[1.14] group-hover:grayscale-0"
                 />
               </div>
             </div>
