@@ -1,8 +1,11 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Geist, Fraunces } from 'next/font/google'
+import Script from 'next/script'
 import { siteDescription, siteName, siteTitle, siteUrl } from '@/lib/site'
 import './globals.css'
+
+const GA_MEASUREMENT_ID = 'G-FX2D209804'
 
 const geistSans = Geist({
   subsets: ['latin'],
@@ -57,7 +60,23 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${fraunces.variable} bg-background`}>
       <body className="font-sans antialiased">
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        {process.env.NODE_ENV === 'production' && (
+          <>
+            <Analytics />
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_MEASUREMENT_ID}');
+              `}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   )
