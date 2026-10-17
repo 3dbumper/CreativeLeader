@@ -10,7 +10,7 @@ export default function Page() {
       <SiteNav />
       <Hero />
       <div className="relative isolate">
-        <div aria-hidden="true" className="bg-charcoal absolute inset-0 -z-10" />
+        <div aria-hidden="true" className="bg-charcoal absolute inset-0 -z-10 opacity-25" />
         <SelectedWork />
       </div>
       <AboutIntro />
