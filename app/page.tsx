@@ -6,10 +6,13 @@ import { SiteFooter } from '@/components/site-footer'
 
 export default function Page() {
   return (
-    <main className="min-h-svh bg-distressed">
+    <main className="min-h-svh bg-background">
       <SiteNav />
       <Hero />
-      <SelectedWork />
+      <div className="relative isolate">
+        <div aria-hidden="true" className="bg-charcoal absolute inset-0 -z-10 opacity-25" />
+        <SelectedWork />
+      </div>
       <AboutIntro />
       <SiteFooter />
     </main>

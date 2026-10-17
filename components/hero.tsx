@@ -77,12 +77,6 @@ export function Hero() {
         )}
       />
 
-      {/* Very faint, short white fade along the bottom edge only */}
-      <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white/85 via-white/35 via-55% to-transparent"
-        aria-hidden
-      />
-
       {/* Scrim + text — begin fading in halfway through the focus sequence */}
       <div
         className={cn(
