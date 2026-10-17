@@ -5,8 +5,9 @@ export function AboutIntro() {
   return (
     <section
       id="about"
-      className="border-t border-border"
+      className="relative isolate border-t border-border"
     >
+      <div aria-hidden="true" className="bg-charcoal-fade absolute inset-0 -z-10" />
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-24 md:py-32 lg:grid-cols-12 lg:gap-16 lg:px-10">
         <Reveal className="lg:col-span-3">
           <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">

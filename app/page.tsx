@@ -9,11 +9,11 @@ export default function Page() {
     <main className="min-h-svh bg-background">
       <SiteNav />
       <Hero />
-      <div className="bg-distressed">
+      <div className="bg-charcoal">
         <SelectedWork />
-        <AboutIntro />
-        <SiteFooter />
       </div>
+      <AboutIntro />
+      <SiteFooter />
     </main>
   )
 }

@@ -87,6 +87,28 @@
   background-repeat: no-repeat, repeat, no-repeat, no-repeat;
 }
 
+/* Even, full-strength distressed charcoal; eases in over the first 16rem so it doesn't hard-edge against the hero */
+@utility bg-charcoal {
+  background-color: var(--background);
+  background-image:
+    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.15 0 0 0 0 0.15 0 0 0 0 0.16 0 0 0 0.16 0'/></filter><rect width='100%' height='100%' filter='url(%23g)'/></svg>"),
+    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 3000' preserveAspectRatio='none'><filter id='m' x='0' y='0' width='100%' height='100%'><feTurbulence type='fractalNoise' baseFrequency='0.006 0.003' numOctaves='5' seed='11'/><feColorMatrix values='0 0 0 0 0.17 0 0 0 0 0.17 0 0 0 0 0.18 0 0 0 0.7 -0.3'/></filter><rect width='100%' height='100%' filter='url(%23m)'/></svg>"),
+    linear-gradient(to bottom, oklch(0.3 0.006 260 / 0.12) 0, oklch(0.3 0.006 260 / 0.46) 16rem);
+  background-size: 240px 240px, 100% 100%, 100% 100%;
+  background-repeat: repeat, no-repeat, no-repeat;
+}
+
+/* Charcoal that fades out to the off-white by the vertical midpoint of its element */
+@utility bg-charcoal-fade {
+  background-color: transparent;
+  background-image:
+    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.15 0 0 0 0 0.15 0 0 0 0 0.16 0 0 0 0.16 0'/></filter><rect width='100%' height='100%' filter='url(%23g)'/></svg>"),
+    linear-gradient(to bottom, oklch(0.3 0.006 260 / 0.46) 0%, oklch(0.3 0.006 260 / 0) 100%);
+  background-size: 240px 240px, 100% 100%;
+  background-repeat: repeat, no-repeat;
+  mask-image: linear-gradient(to bottom, black 0%, transparent 50%);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
