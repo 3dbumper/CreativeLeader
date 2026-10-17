@@ -77,9 +77,9 @@ export function Hero() {
         )}
       />
 
-      {/* Very faint, short white fade along the bottom edge only */}
+      {/* Carry the darker average tone of the image into the next section. */}
       <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white/85 via-white/35 via-55% to-transparent"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-b from-transparent via-[#4a4650]/55 to-[#3b3945]/90"
         aria-hidden
       />
 
