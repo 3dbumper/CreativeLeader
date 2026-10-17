@@ -161,12 +161,8 @@ export function SelectedWork() {
   return (
     <section
       id="work"
-      className="relative isolate overflow-hidden bg-[linear-gradient(to_bottom,#3b3945_0%,#514e58_18%,#8f8b8b_48%,var(--background)_82%,var(--background)_100%)]"
+      className="relative isolate overflow-hidden bg-background"
     >
-      <div
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.08),transparent_44%)]"
-        aria-hidden
-      />
       <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-12 md:pb-32 md:pt-16 lg:px-10">
       <Reveal
         as="header"

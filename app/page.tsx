@@ -6,7 +6,7 @@ import { SiteFooter } from '@/components/site-footer'
 
 export default function Page() {
   return (
-    <main className="min-h-svh bg-distressed">
+    <main className="min-h-svh bg-background">
       <SiteNav />
       <Hero />
       <SelectedWork />
