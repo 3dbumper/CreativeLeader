@@ -9,7 +9,8 @@ export default function Page() {
     <main className="min-h-svh bg-background">
       <SiteNav />
       <Hero />
-      <div className="bg-charcoal">
+      <div className="relative isolate">
+        <div aria-hidden="true" className="bg-charcoal absolute inset-0 -z-10" />
         <SelectedWork />
       </div>
       <AboutIntro />
