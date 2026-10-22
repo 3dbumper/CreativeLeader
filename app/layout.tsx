@@ -60,7 +60,7 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${fraunces.variable} bg-background`}>
       <body className="font-sans antialiased">
         {children}
-        {process.env.NODE_ENV === 'production' && (
+        {(process.env.VERCEL_ENV === 'production' || process.env.VERCEL_ENV === 'preview') && (
           <>
             <Analytics />
             <Script
