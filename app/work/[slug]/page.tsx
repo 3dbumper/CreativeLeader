@@ -230,7 +230,13 @@ export default async function WorkDetailPage({
         <div className="absolute inset-x-0 bottom-0 h-[85%] bg-gradient-to-t from-background via-background/40 to-transparent" />
 
         <div className="absolute inset-0">
-          <div className="mx-auto flex h-full max-w-7xl flex-col justify-end px-6 pb-12 pt-28 md:pb-16 lg:px-10">
+          <div
+            className={`mx-auto flex h-full max-w-7xl flex-col justify-end px-6 pt-28 lg:px-10 ${
+              project.slug === 'performance-direction'
+                ? 'pb-4 md:pb-8'
+                : 'pb-12 md:pb-16'
+            }`}
+          >
             <Link
               href="/#work"
               className="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:text-foreground"
