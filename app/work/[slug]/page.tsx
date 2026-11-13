@@ -261,6 +261,14 @@ export default async function WorkDetailPage({
         </div>
       </section>
 
+      {project.disclaimer && (
+        <aside className="mx-auto max-w-7xl px-6 pt-6 lg:px-10" aria-label="Artwork attribution">
+          <p className="max-w-4xl text-base leading-relaxed text-muted-foreground/80 md:text-lg">
+            {project.disclaimer}
+          </p>
+        </aside>
+      )}
+
       {/* Body */}
       <article className="mx-auto max-w-7xl px-6 py-20 md:py-28 lg:px-10">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
@@ -756,14 +764,6 @@ export default async function WorkDetailPage({
               </div>
             )}
 
-            {project.disclaimer && (
-              <p className="mt-10 border-t border-border pt-6 text-xs leading-relaxed text-muted-foreground">
-                <span className="uppercase tracking-[0.18em] text-foreground/70">
-                  Attribution ·{' '}
-                </span>
-                {project.disclaimer}
-              </p>
-            )}
           </div>
         </div>
       </article>
